@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALI Sirat Dental Clinic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .hero {
+            background-image: url(Background1.jpg); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .menu {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: background 0.3s;
+        }
+        .menu a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            font-size: 1.5em;
+        }
+        .about-me {
+            display: flex;
+            align-items: center;
+        }
+        .about-me img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .service {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .service img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .service h3 {
+            color: #0073e6;
+            margin-top: 10px;
+        }
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .booking-form label {
+            margin: 10px 0 5px;
+        }
+        .booking-form input, .booking-form select, .booking-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .booking-form button {
+            margin-top: 20px;
+            padding: 10px;
+            background: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .booking-form button:hover {
+            background: #005bb5;
+        }
+        .contact-info {
+            background: #0073e6;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .contact-info h2 {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="menu">
+            <a href="#about">About Me</a>
+            <a href="#services">Services</a>
+            <a href="#booking">Book Appointment</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <h1>ALI SIRAT DENTAL CLINIC</h1>
+    </div>
+    <div id="about" class="container">
+        <div class="section about-me">
+            <img src="images/Me.JPG" alt="Dr. Alli Mohammad Sirat">
+            <div>
+                <h2>About Me</h2>
+                <p>I am Dr. Alli Sirat. I graduated from Kabul Medical University. I am an experienced General Dentist offering 4+ years of top-rated patient care, expertise in preventive and restorative dentistry, and a commitment to providing outstanding service.</p>
+            </div>
+        </div>
+    </div>
+    <div id="services" class="container">
+        <div class="section">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="images\Tooth Extraction.jpg" alt="Tooth extraction">
+                    <h3>Tooth Extraction</h3>
+                    <p>Safe and painless removal of teeth when necessary.</p>
+                </div>
+                <div class="service">
+                    <img src="images\Filling.jpg" alt="Filling">
+                    <h3>Filling</h3>
+                    <p>Repair of cavities with durable and natural-looking materials.</p>
+                </div>
+                <div class="service">
+                    <img src="images\Root Canal.jpg" alt="Root canal">
+                    <h3>Root Canal</h3>
+                    <p>Treatment to save and repair badly damaged or infected teeth.</p>
+                </div>
+                <div class="service">
+                    <img src="images\Replacement.jpg" alt="Replacement">
+                    <h3>Replacement</h3>
+                    <p>Options for replacing missing teeth including implants and bridges.</p>
+                </div>
+                <div class="service">
+                    <img src="images\Teeth whitening.jpg" alt="Teeth whitening">
+                    <h3>Teeth Whitening</h3>
+                    <p>Professional whitening treatments for a brighter smile.</p>
+                </div>
+                <div class="service">
+                    <img src="images\Crowns.jpg" alt="Crowns">
+                    <h3>Crowns</h3>
+                    <p>Restoration of teeth with protective and natural-looking crowns.</p>
+                </div>
+                <div class="service">
+                    <img src="images\Bridgework.jpg" alt="Bridgework">
+                    <h3>Bridgework</h3>
+                    <p>Bridges to replace one or more missing teeth, improving function and appearance.</p>
+                </div>
+                <div class="service">
+                    <img src="images\xray.jpeg" alt="Dental X-Ray">
+                    <h3>Dental X-Ray</h3>
+                    <p>High-quality imaging to diagnose and plan treatments.</p>
+                </div>
+                <div class="service">
+                    <img src="images\Dental checkup.jpg" alt="Dental checkup">
+                    <h3>Dental Checkup</h3>
+                    <p>Regular checkups to maintain optimal oral health.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="booking" class="container">
+        <div class="section">
+            <h2>Booking Appointment</h2>
+            <form class="booking-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="Telephone Number">Telephone Number</label>
+                <input type="number" id="Telephone Number" name="Telephone Number" required></textarea>
+
+                <label for="purpose">Purpose of Visit</label>
+                <textarea id="purpose" name="purpose" required></textarea>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time</label>
+                <input type="time" name="time" >
+
+                <button type="submit">Book Appointment</button>
+        
+        </div>
+    </div>
+    <div id="contact" class="container">
+        <div class="section">
+            <h2>Our Address and Contact Info</h2>
+            <p><i class="fas fa-map-marker-alt"></i> Modern Hospital,Mazari Street, 13th district, Kabul Afghanistan</p>
+            <p><i class="fas fa-phone"></i> Our contact Number: +93797707012</p>
+            <p><i class="fab fa-whatsapp"></i> WhatsApp number: +93785406028</p>
+        </div>
+    </div>
+</body>
+</html>
